@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <br>
+  <!-- Basic Page Needs
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>RFNet-4D</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/footable.standalone.min.css">
+
+  <!-- Favicon
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Google icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Analytics -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-86869673-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+  <!-- Hover effect: https://codepen.io/nxworld/pen/ZYNOBZ -->
+  <style>
+    img {
+      display: block;
+    }
+
+    .column-50 {
+      float: left;
+      width: 50%;
+    }
+
+    .row-50:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .floating-teaser {
+      float: left;
+      width: 30%;
+      text-align: center;
+      padding: 15px;
+    }
+
+    .venue strong {
+      color: #99324b;
+    }
+
+    .benchmark {
+      width: 100%;
+      max-width: 960px;
+      overflow: scroll;
+      overflow-y: hidden;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Primary Page Layout
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <h4 style="text-align:center">MarineVRS: Marine Video Retrieval System with Explainability via Semantic Understanding</h4>
+    <p align="center" , style="margin-bottom:12px;">
+      <a class="simple" href="#">Tan-Sang Ha</a><sup>#</sup>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="simple" href="#">Hai Nguyen-Truong</a><sup>#</sup>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="simple" href="https://tuananh1007.github.io/">Tuan-Anh Vu</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a class="simple" href="https://saikit.org/">Sai-Kit Yeung</a>
+    </p>
+
+    <p align="center" style="margin-bottom:20px;">
+      The Hong Kong University of Science and Technology
+      <br>
+    </p>
+
+    <p align="center" style="margin-bottom:20px;">
+      <sup>#</sup>Equal contribution
+      <br>
+    </p>
+
+    <div class="venue">
+      <p align="center"><b>OCEANS 2023 Limerick Conference</b></p>
+    </div>
+
+    <figure>
+      <img src="images/overview.png" style="width:100%"></img>
+    </figure>
+    <p align="center">Overview of Marine Video Retrieval System. </p>
+
+    <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
+      <h5>Abstract</h5>
+      <p align="justify">
+        Building a video retrieval system that is robust and reliable, especially for the marine environment, is a challenging task due to several factors such as dealing with massive amounts of dense and repetitive data, occlusion, blurriness, low lighting conditions, and abstract queries. To address these challenges, we present MarineVRS, a novel and flexible video retrieval system designed explicitly for the marine domain. MarineVRS integrates state-of-the-art methods for visual and linguistic object representation to enable efficient and accurate search and analysis of vast volumes of underwater video data. In addition, unlike the conventional video retrieval system, which only permits users to index a collection of images or videos and search using a free-form natural language sentence, our retrieval system includes an additional Explainability module that outputs the segmentation masks of the objects that the input query referred to. This feature allows users to identify and isolate specific objects in the video footage, leading to more detailed analysis and understanding of their behavior and movements. Finally, with its adaptability, explainability, accuracy, and scalability, MarineVRS is a powerful tool for marine researchers and scientists to efficiently and accurately process vast amounts of data and gain deeper insights into the behavior and movements of marine species.
+        <br>
+        <br>
+      </p>
+    </div>
+
+
+    <div class="section">
+      <h5>Materials</h5>
+      <div class="container" style="width:95%">
+        <!-- Icon row -->
+        <div class="row">
+          <div class="three columns">
+            <a href="https://arxiv.org/"><img
+                style="border: 1px solid #ddd; border-radius: 4px; padding: 2px; width: 108px;"
+                src="images/page1.png"></a>
+          </div>
+          <!-- <div class="four columns">
+            <a href="#"><img
+                style="border: 1px solid #ddd; border-radius: 4px; padding: 2px; width: 200px;"
+                src="images/poster_thumbnail.png"></a>
+          </div> -->
+          <div class="three columns">
+            <a href="#"><img
+                style="border: 1px solid #ddd; border-radius: 4px; padding: 2px; width: 108px;"
+                src="images/demo.png"></a>
+          </div>
+        </div>
+        <!-- Link row -->
+        <div class="row">
+          <div class="three columns">
+            <a href="https://arxiv.org/">Paper</a>
+          </div>
+          <!-- <div class="four columns">
+            <a href="#">Poster</a>
+          </div> -->
+          <div class="three columns">
+            <a href="http://marinevrs-demo.hkustvgd.com/">Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
+      <h5>Overview</h5>
+      <center>
+        <img src="images/retrieval_module.png" style="width:100%"></img>
+        <div class="caption">
+          <p align="justify">
+            The Retrieval module of our MarineVRS is responsible for returning relevant videos to a user based on their query. However, in order to make this process efficient and scalable, we split the retrieval module into two stages: the indexing stage and the retrieval stage.
+          </p>
+        </div>
+        <br>
+      </center>
+    </div>
+
+    <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
+      <h5>Our Explainability Module</h5>
+      <center>
+        <img src="images/exp_module.png" style="width:90%"></img>
+        <div class="caption">
+          <br>
+          <p align="justify">
+            It takes a video from Retrieval module's output as an input for Visual Encoder and a text prompt for CLIP Text Encoder. The extracted visual and text features are fused by Multimodal Early Fusion before feeding into Visual-Linguistic OceanFormer to get final segmented masks.
+          </p>
+        </div>
+        <br>
+      </center>
+    </div>
+
+    <div id="teaser" class="container" style="width:100%; margin:0; padding:0">
+      <h5>Some examples</h5>
+      <center>
+        <iframe width="820" height="628" src="https://www.youtube.com/embed/ovRTFLiK5x4" title="MarineVRS: Turtle" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="820" height="628" src="https://www.youtube.com/embed/UyGjK-MtlZ0" title="MarineVRS: Shark" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="820" height="628" src="https://www.youtube.com/embed/xRtzERVQckE" title="MarineVRS: Starfish" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </center>
+    </div>
+
+
+    <div class="section">
+      <h5>Citation</h5>
+      <pre style="margin:0">
+        <code>@inproceedings{tsha2023marinevrs,
+  title={MarineVRS: Marine Video Retrieval System with Explainability via Semantic Understanding},
+  author={Tan-Sang Ha, Hai Nguyen-Truong, Tuan-Anh Vu, Sai-Kit Yeung},
+  booktitle={Proceedings of OCEANS 2023 Limerick},
+  year={2023}
+}</code>
+</pre>
+    </div>
+
+    <!-- -->
+    <br>
+
+    <div class="section">
+      <h5>Acknowledgements</h5>
+      <p>
+        This research project is partially supported by an internal grant from HKUST (R9429), the Innovation and Technology Support Programme of the Innovation and Technology Fund (Ref: ITS/200/20FP), and the Marine Conservation Enhancement Fund (MCEF20107). The website is modified from this <a href="https://tuananh1007.github.io/RFNet-4D/">template</a>.
+      </p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/footable.min.js"></script>
+  
+
+  <script type="text/javascript">
+    jQuery(function ($) {
+      $('.table').footable();
+    });
+  </script>
+
+  <!-- End Document
+         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
