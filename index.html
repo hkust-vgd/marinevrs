@@ -169,7 +169,7 @@
         <img src="images/retrieval_module.png" style="width:100%"></img>
         <div class="caption">
           <p align="justify">
-            The Retrieval module of our MarineVRS is responsible for returning relevant videos to a user based on their query. However, in order to make this process efficient and scalable, we split the retrieval module into two stages: the indexing stage and the retrieval stage.
+            In the beginning, our Retrieval module will take <a href="https://mvk.hkustvgd.com/">MVK dataset</a> as input, then we pre-process videos to get CLIP features and metadata for indexing. With each text-based query, we will search and rank relevant videos and output them for use as input of the Explainability module. However, in order to make this process efficient and scalable, we split the retrieval module into two stages: the indexing stage and the retrieval stage. During the indexing stage, we preprocess and store the videos and their metadata in a vector database while maintaining all relevant information. In the retrieval stage, we use the power of both CPU and GPU to efficiently calculate the similarity scores between the query and the stored videos.
           </p>
         </div>
         <br>
