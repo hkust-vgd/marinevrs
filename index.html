@@ -183,7 +183,7 @@
         <div class="caption">
           <br>
           <p align="justify">
-            It takes a video from Retrieval module's output as an input for Visual Encoder and a text prompt for CLIP Text Encoder. The extracted visual and text features are fused by Multimodal Early Fusion before feeding into Visual-Linguistic OceanFormer to get final segmented masks.
+            The explainability module aims to identify and predict pixel-wise masks of objects within visual data based on natural language expressions that refer to these objects. It takes a video from Retrieval module's output as an input for Visual Encoder and a text prompt (same as the text query for Retrieval's module) for CLIP Text Encoder. The Visual Encoder extracts visual features from input images or videos. The Text Encoder processes input text data to extract meaningful textual features. The Multimodal early fusion module combines visual and textual features early in the pipeline to create a multimodal knowledge, which then pass to the Pixel Decoder and Visual-Linguistic OceanFormer to get final segmented masks.
           </p>
         </div>
         <br>
